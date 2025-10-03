@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Josefina Castro - Diseñadora Integral UC</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>MARÍA JOSEFINA CASTRO</h1>
+            <p>Diseñadora Integral</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="index.html" class="active">Portafolio</a>
+            <a href="https://josecastrod.github.io/Prueba-1/">Sobre mí</a>
+             <a href="about.html" class="active">Progreso</a>
+
+        </nav>
+
+ <main>
+      
+
+      <!-- Mi párrafo -->
+      <section style="padding: 20px 0;">
+        <p>
+          Soy diseñadora con foco en identidad integral de todo proyecto. Lo que más me gusta es el diseño de producto, industrial y de experiencia.
+        </p>
+        <p>
+          Este portafolio muestra alguno de los proyectos que he realizado.        </p>
+      </section>
+
+      <section id="estadisticas" class="portafolio">
+  <h2>Estadísticas</h2>
+  <div class="chart-wrap">
+    <canvas id="myChart"></canvas>
+  </div>
+</section>
+
+    </main>
+        </section>
+
+        <footer class="footer">
+      <p>© 2025 María Josefina Castro. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="#">Behance</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cv = document.getElementById('myChart');
+      if (!cv || typeof Chart === 'undefined') return;
+
+     
+      const labels = ['Proyecto 1','Proyecto 2','Proyecto 3','Proyecto 4','Proyecto 5'];
+      const data   = [4, 3, 2, 2, 5];
+
+
+      new Chart(cv, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Progreso en uso de programas de diseño en creación y edición',
+            data,
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: { y: { beginAtZero: true, max: 7 } }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 María Josefina Castro. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+    <script src="portafolio.js">
+
+
+        </script>
+</body>
+</html>
