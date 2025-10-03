@@ -4,25 +4,25 @@ const trabajos= [
   {
     Título: "Proyecto 1",
     categoría: "Diseño de producto",
-    foto: "./img/Foto 1.1",
+    foto: "./img/Foto 1.1.jpg",
     descripción: "Propuesta de diseño para Atakamaoutdoor, nueva línea de pantuflas"
   },
    {
     Título: "Proyecto 2",
     categoría: "Diseño de producto",
-    foto: "./img/Foto 2.1",
+    foto: "./img/Foto 2.1.jpg",
     descripción: "Proyecto para Atakamaoutdoor, Nueva línea de hidratación y regalos"
   },
   {
     Título: "Proyecto 4",
     categoría: "textil",
-    foto: "./img/Foto 3.1",
+    foto: "./img/Foto 3.1.jpg",
     descripción: "Este trabajo lo realicé en un curso textil en taller 8, el cual buscaba utilizar el upcylclin"
   },
   {
     Título: "Proyecto 5",
     categoría: "textil",
-    foto: "./img/Foto 4.1",
+    foto: "./img/Foto 4.1.jpg",
     descripción: "Este trabajo lo realicé en un curso textil en taller 8, el cual buscaba utilizar la intervención en prendas"
   },
   {
@@ -39,11 +39,11 @@ const grid = document.querySelector(".gallery-grid");
 trabajos.forEach((trabajo) => {
   grid.innerHTML += `
     <div class="gallery-item">
-      <img src="${trabajo.imagen}" alt="${trabajo.titulo}">
+      <img src="${trabajo.foto}" alt="${trabajo.Título}">
       <div class="gallery-overlay">
-        <h3>${trabajo.titulo}</h3>
+        <h3>${trabajo.Título}</h3>
         <p>${trabajo.categoría}</p>
-        <p class="descripcion">${trabajo.descripcion}</p>
+        <p class="descripcion">${trabajo.descripción}</p>
       </div>
     </div>
 `;
